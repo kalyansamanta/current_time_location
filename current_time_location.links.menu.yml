@@ -1,0 +1,6 @@
+# Add Site Location Form links
+current_time_location.settings:
+  title: 'Site Location'
+  parent: system.admin_config_system
+  description: 'Manage site location configuration form'
+  route_name: current_time_location.site_location_settings

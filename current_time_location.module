@@ -1,0 +1,34 @@
+<?php
+
+/**
+ * @file
+ * Contains the information to site location and the current time.
+ */
+use Drupal\Core\Routing\RouteMatchInterface;
+
+
+/**
+ * Implements hook_help().
+ */
+function current_time_location_help($route_name, RouteMatchInterface $route_match) {
+  switch ($route_name) {
+    case 'help.page.current_time_location':
+      $output = '<h3>' . t('Custom Location') . '</h3>';
+      $output .= '<p>';
+      $output .= t('This module contain the information of site location with current time');
+      $output .= '</p>';
+      return $output;
+  }
+}
+
+/**
+ * Implements hook_theme().
+ */
+
+function current_time_location_theme($existing, $type, $theme, $path) {
+return array(
+    'current_time_location_template' => array(
+      'variables' => array('data' => NULL),
+    ),
+  );
+}

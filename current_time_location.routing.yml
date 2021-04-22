@@ -1,0 +1,8 @@
+# Location Configuration Form
+current_time_location.site_location_settings:
+  path: '/admin/config/site-location'
+  defaults:
+    _form: '\Drupal\current_time_location\Form\LocationConfigurationForm'
+    _title: 'Site Location Configuration'
+  requirements:
+    _permission: 'site location configuration form'
